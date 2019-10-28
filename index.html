@@ -66,7 +66,7 @@
     <script src="https://kit.fontawesome.com/d0beec8f33.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="page-header">
+    <header class="menu-bar">
 <!-- header -->
         <ul class="header_slideshow">
             <li></li>
@@ -75,24 +75,51 @@
             <li></li>
         </ul>
         <!-- header nav -->
-        <div class="header-nav">
-            <a href="#" class="logo animated rollIn">your logo</a>
-            <ul class="header-nav__list">
-                <li class="nav-list__item"><a  href="#" class="nav-list__item">Home</a></li>
-                <li><a  href="#" class="nav-list__item">About</a></li>
-                <li><a  href="#" class="nav-list__item">Servicing</a></li>
-                <li><a  href="#" class="nav-list__item">Portfolio</a></li>
-                <li><a  href="#" class="nav-list__item">Blog</a></li>
-                <li><a  href="#" class="nav-list__item">Contact us</a></li>
-                <li>
-                    <a  href="#" class="nav-list__item">
-                        <!-- <svg><use xlink:href="font awesome/svgs/solid/search.svg"></use></svg> -->
-                        <i class="fas fa-search"></i>
-                        <!-- <img class="icon__item" src="font awesome/svgs/solid/search.svg" alt=""> -->
-                    </a>
-                </li>
-            </ul>
+        <div class="container">
+                <div class="row">
+                    <div class="col-xl-2">
+                            <a href="#" class="logo animated rollIn">your logo</a>
+                    </div>
+                    <div class="col-xl-8">
+                        <nav>
+                            <ul class="header-menu">
+                                <li class="header-menu__item"><a  href="#" class="nav-list__item">Home</a></li>
+                                <li><a  href="#" class="header-menu__item">About</a></li>
+                                <li><a  href="#" class="header-menu__item">Servicing</a></li>
+                                <li><a  href="#" class="header-menu__item">Portfolio</a></li>
+                                <li><a  href="#" class="header-menu__item">Blog</a></li>
+                                <li><a  href="#" class="header-menu__item">Contact us</a></li>
+                                <li>
+                                    <a  href="#" class="header-menu__item">
+                                        <svg><use xlink:href="font awesome/svgs/solid/search.svg"></use></svg>
+                                        <i class="fas fa-search"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+
+                        <!-- <div class="header-nav">
+                                <a href="#" class="logo animated rollIn">your logo</a>
+                                <ul class="header-nav__list">
+                                    <li class="nav-list__item"><a  href="#" class="nav-list__item">Home</a></li>
+                                    <li><a  href="#" class="nav-list__item">About</a></li>
+                                    <li><a  href="#" class="nav-list__item">Servicing</a></li>
+                                    <li><a  href="#" class="nav-list__item">Portfolio</a></li>
+                                    <li><a  href="#" class="nav-list__item">Blog</a></li>
+                                    <li><a  href="#" class="nav-list__item">Contact us</a></li>
+                                    <li>
+                                        <a  href="#" class="nav-list__item">
+                                            <!-- <svg><use xlink:href="font awesome/svgs/solid/search.svg"></use></svg> -->
+                                            <!-- <i class="fas fa-search"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                        </div>-->
+                </div>
         </div>
+
         <!-- header main -->
         <div>
             <h1>best software </br> landingpage</h1>
@@ -101,9 +128,8 @@
                 <a href="" class="btn-secondary">learn more</a>
             </div>
         </div>
-    </div>
+    </header>
 
-<!-- // Pixel Glass -->
     <script src="pixel_glass/pixel_glass.js"></script>
     <script src="js/popper1.14.7.min.js"></script>
     <script src="js/tooltip.js"></script>
