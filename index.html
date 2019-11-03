@@ -70,7 +70,7 @@
     <header>   
         <!-- header nav -->  
         <nav>
-            <div class="wrap menu-bar">
+            <div class=" container-fluid">
                     <div class="container">
                         <div class="row flex-wrap-no-wrap">
                             <div class="col-xl-2 align-self-center">
@@ -115,28 +115,66 @@
                         <button class="button button_full">HIRE IS NOW</button>
                     </div>
                     <div class="arrow">
-                        <a href="#" class="arrow-link"></a>
+                        <a href="#content" class="arrow-link"></a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 about-cont">
+                    <h3 class="about__title">About Us</h3>
+                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                </div>
+            </div>
+            <div id="content" class="row about-icons justify-content-around">
+                <div class="col-xl-3 about-icons__cont">
+                    <img src="img/globus_icon.png" alt="globus" class="about-icons__image">
+                    <h4>Awesome Icons</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                </div>
+                <div class="col-xl-3 about-icons__cont">
+                    <img src="img/people_icon.png" alt="people" class="about-icons__image">
+                    <h4>One Page</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                </div>
+                <div class="col-xl-3 about-icons__cont">
+                    <img src="img/head_icon.png" alt="head" class="about-icons__image">
+                    <h4>Fully Responsive</h4>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="pixel_glass/pixel_glass.js"></script>
-    <script src="js/popper1.14.7.min.js"></script>
-    <script src="js/tooltip.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <section class="services" id="services">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row col-xl-12 justify-content-center">
+                    <h3>Our Services</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore tempore libero sit est. Voluptatum dolor reiciendis quae animi necessitatibus nam odio saepe molestiae et! Architecto rem maiores voluptate rerum maxime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/jquery.lettering.js"></script>
+    <script src="pixel_glass/pixel_glass.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper1.14.7.min.js"></script>
+    <script src="js/tooltip.js"></script>
+
+
 
 <!--lettering-->
     <script>
         $(document).ready(function() {
-              $(".logo").lettering('words').children("span").css({'display':'inline-block', '-webkit-transform':'rotate(-25deg)'}).lettering();
-              $(".menu-link").lettering('words').children("span").lettering();
-
+              $(".logo").lettering('words').children("span").lettering();
+              $(" ").lettering('words');
             });
     </script>
- 
 </body>
 </html>

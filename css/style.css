@@ -24,6 +24,26 @@ header {
   height: 775px;
 }
 
+.text {
+  font-size: 15px;
+  font-family: "Open Sans";
+}
+
+.container-fluid {
+  color:#212121;
+  background-color: #fff;
+  height: 120px;
+  line-height: 120px;
+}
+
+.container-fluid a {
+  color: rgb(33, 33, 33);
+}
+
+.container-fluid a:hover {
+  text-decoration: none;
+  color:rgb(0, 137, 123);
+}
 
 .container {
   padding-right: 0px;
@@ -36,25 +56,10 @@ header {
   margin-right: -30px;
 }
 
-.menu-bar{
-  color:#212121;
-  background-color: #fff;
-  height: 120px;
-  line-height: 120px;
-}
-
-.menu-bar a {
-  color: rgb(33, 33, 33);
-}
-
-.menu-bar a:hover {
-  text-decoration: none;
-  color: orangered;
-}
 
 .logo {
   align-self: center;
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Open Sans";
   color: rgb(33, 33, 33);
   font-weight: bold;
@@ -73,7 +78,7 @@ header {
 }
 
 .header-menu__item:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all 0.5s ease;
 }
 
@@ -81,8 +86,7 @@ header {
   font-family: 'Open Sans semibold';
   font-size: 20px;
   font-weight: 600;
-  color: rgb(33, 33, 33);
-  background-color: darkmagenta;
+  color: linear-gradient(to right, #2e256d, #463c79, #5d5484, #736c8f, #89859a, #848290, #807e85, #7b7b7b, #5b5b5b, #3d3d3d, #212121, #000000);
   line-height: 1.1;
   letter-spacing: 0.05em;
   /* letter-spacing: 1px;  */
@@ -94,7 +98,7 @@ header {
   border-radius: 5px;
 }
 
-/* header main */
+/*-- header main-- */
 .header-main {
   height: 655px;
   text-align: center;
@@ -144,31 +148,13 @@ header {
   transition: ease-in-out 0.2s;
 }
 
-
-
-
-.Rectangle_3_copy {
-
-  position: absolute;
-  left: 710px;
-  top: 518px;
-  width: 220px;
-  height: 70px;
-  z-index: 1;
+.btn {
+  margin-bottom: 80px;
 }
 
-.down_bar {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1400px;
-  height: 9894px;
-  z-index: 25;
-}
 .arrow {
-  display: flex;
+  display: block;
   margin: 0 auto;
-  align-self: center;
   width: 25px;
   height: 25px;
   font-size: 25px;
@@ -176,11 +162,80 @@ header {
   line-height: 0.88;
   border-left: 4px solid white;
   border-top:  4px solid white;
-  transform: rotate(-135deg);
   align-self: center;
+  text-decoration: none;
+	cursor:pointer;
+	animation: animateArrow 1s infinite;
+}
+
+@keyframes animateArrow {
+	0% {
+		transform: translateY(0px) rotate(-135deg);
+	}
+	50% {
+		transform: translateY(15px) rotate(-135deg);
+	}
+	100% {
+		transform: translateY(0px) rotate(-135deg);
+	}
+}
+/*----------------header end---------------------*/
+
+/*----------------section about------------------*/
+.about-cont {
+  flex-direction: column;
+  text-align: center;
+}
+
+.about__title {
+    margin-top: 125px;
+    font-size: 30px;
+    font-family: "Open Sans";
+    color: rgb(33, 33, 33);
+    font-weight: bold;
+    line-height: 0.733;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    z-index: 52;  
+}
+
+.about__text {
+  margin: 37px 0 128px 0;
+}
+
+.about-icons {
+  margin-bottom: 126px;
+}
+
+.about-icons__cont {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-icons__image {
+  margin-bottom: 45px;
 }
 
 
-/*--header end--*/
+.about-icons__cont h4 {
+  font-size: 20px;
+  font-family: "Open Sans";
+  color: rgb(33, 33, 33);
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
 
+.about-icons__cont p {
+  color: rgb(33, 33, 33);
+  line-height: 1.467;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
 
+/*---------section about END--------------*/
+
+/*---------section services--------------*/
+.services {
+  background-color:  rgb(0, 137, 123);
+}
