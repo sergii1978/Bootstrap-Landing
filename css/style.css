@@ -29,7 +29,7 @@ header {
   font-family: "Open Sans";
 }
 
-.container-fluid {
+header .container-fluid {
   color:#212121;
   background-color: #fff;
   height: 120px;
@@ -182,30 +182,15 @@ header {
 /*----------------header end---------------------*/
 
 /*----------------section about------------------*/
-.about-cont {
-  flex-direction: column;
-  text-align: center;
+.about {
+  padding: 125px 0px;
 }
 
-.about__title {
-    margin-top: 125px;
-    font-size: 30px;
-    font-family: "Open Sans";
-    color: rgb(33, 33, 33);
-    font-weight: bold;
-    line-height: 0.733;
-    letter-spacing: 1.5px;
-    text-transform: capitalize;
-    z-index: 52;  
-}
 
-.about__text {
+.about-cont p {
   margin: 37px 0 128px 0;
 }
 
-.about-icons {
-  margin-bottom: 126px;
-}
 
 .about-icons__cont {
   flex-direction: column;
@@ -236,6 +221,68 @@ header {
 /*---------section about END--------------*/
 
 /*---------section services--------------*/
-.services {
-  background-color:  rgb(0, 137, 123);
+.services, .services .container-fluid {
+  padding: 174px 0px 126px 0px;
+  background-color: #e4fdf9;
+}
+
+.services-cont {
+  text-align: center; 
+}
+
+.block-title {
+    font-size: 30px;
+    font-family: "Open Sans";
+    color: rgb(33, 33, 33);
+    font-weight: bold;
+    line-height: 0.733;
+    text-align: center; 
+    letter-spacing: 1.5px; 
+}
+
+.block-text {
+    font-size: 15px;
+    font-family: "Open Sans";
+    color: rgb(33, 33, 33);
+    line-height: 1.467;
+    text-align: center;
+    letter-spacing: 0.75px;
+}
+
+.services .block-text { 
+  padding: 37px 0 110px 0;
+}
+
+.services-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.services-card i {
+  height: 60px;
+  line-height: 60px;
+}
+
+.services-card__title {
+  font-size: 20px;
+  font-family: "Open Sans semibold";
+  line-height: 1.1;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.services-card__text {
+  
+}
+
+.services-card__btn {
+  font-size: 20px;
+  font-family: "Open Sans semibold";
+  line-height: 1.1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
