@@ -125,11 +125,6 @@ header .container-fluid {
 }
 
 .button {
-  background-color: transparent;
-  border-color: white;
-  width: 220px;
-  height: 70px;
-  color: rgb(255, 255, 255);
   font-size: 20px;
   font-family: "Roboto";
   font-weight: 600;
@@ -137,15 +132,24 @@ header .container-fluid {
   letter-spacing: 1px;
   line-height: 1.1;
   text-align: center;
-  border: 3px solid;
-  margin: 0px 7px 0px 7px;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  border: 3px solid white;
+}
+
+.header-main button {
+  width: 220px;
+  height: 70px;
+  padding: 0 auto;
+  margin: 0 10px;
 }
 
 
 .button:hover {
-  background-color: rgb(0, 137, 123);
-  border-color:  rgb(0, 137, 123);
+  background: rgb(0, 137, 123);
+  border:  rgb(0, 137, 123);
   transition: ease-in-out 0.2s;
+  cursor: pointer;
 }
 
 .btn {
@@ -221,7 +225,7 @@ header .container-fluid {
 /*---------section about END--------------*/
 
 /*---------section services--------------*/
-.services, .services .container-fluid {
+.services {
   padding: 174px 0px 126px 0px;
   background-color: #e4fdf9;
 }
@@ -229,6 +233,17 @@ header .container-fluid {
 .services-cont {
   text-align: center; 
 }
+
+.services-card__block {
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+/* .card-area {
+  margin: 0 auto;
+} */
 
 .block-title {
     font-size: 30px;
@@ -253,17 +268,33 @@ header .container-fluid {
   padding: 37px 0 110px 0;
 }
 
-.services-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+.card-area {
+  background: white;
+  padding: 50px 40px 40px;
+  transition: 0.3s;
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.services-card i {
+.card-area i {
   height: 60px;
   line-height: 60px;
+  margin-bottom: 40px;
+}
+
+.card-area:hover {
+  background: #00897b;
+  color: white;
+  box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+
+.card-area:hover p{
+  color: white;
+}
+
+.card-area:hover button{
+  color: white;
+  border: 2px solid white;
 }
 
 .services-card__title {
@@ -273,10 +304,17 @@ header .container-fluid {
   letter-spacing: 1px;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 30px;
 }
 
 .services-card__text {
-  
+  font-size: 15px;
+  font-family: "Open Sans";
+  color: rgb(33, 33, 33);
+  line-height: 1.667;
+  letter-spacing: 0.75px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .services-card__btn {
@@ -285,4 +323,34 @@ header .container-fluid {
   line-height: 1.1;
   letter-spacing: 1px;
   text-transform: uppercase;
+  text-align: center;
+  border: 2px solid  rgb(33, 33, 33);
+  width: 146px;
+  height: 52px;
+  margin: 0 auto;
+  background: transparent;
+}
+/*---services END----*/
+
+/*-----works---------*/
+.works {
+  text-align: center;
+}
+
+.works h3 {
+  margin: 125px 0 40px 0;
+}
+
+.works button {
+  padding: 10px 25px;
+  margin: 0 10px;
+  background: transparent;
+  color: black;
+  border: 2px solid rgb(0, 137, 123);
+}
+
+.works button:hover {
+  background:  rgb(0, 137, 123);
+  color: white;
+  border: 2px solid rgb(0, 137, 123);
 }

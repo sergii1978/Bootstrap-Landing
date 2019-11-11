@@ -80,11 +80,11 @@
                         <div class="col-xl-8 ml-auto align-self-center">
                             <ul class="header-menu d-flex justify-content-end">
                                 <li class="header-menu__item"><a  href="#" class="menu-link">Home</a></li>
-                                <li class="header-menu__item"><a  href="#" class="menu-link">About</a></li>
-                                <li class="header-menu__item"><a  href="#" class="menu-link">Servicing</a></li>
-                                <li class="header-menu__item"><a  href="#" class="menu-link">Portfolio</a></li>
-                                <li class="header-menu__item"><a  href="#" class="menu-link">Blog</a></li>
-                                <li class="header-menu__item"><a  href="#" class="menu-link">Contact us</a></li>
+                                <li class="header-menu__item"><a  href="#about" class="menu-link">About</a></li>
+                                <li class="header-menu__item"><a  href="#services" class="menu-link">Servicing</a></li>
+                                <li class="header-menu__item"><a  href="#portfolio" class="menu-link">Portfolio</a></li>
+                                <li class="header-menu__item"><a  href="#blog" class="menu-link">Blog</a></li>
+                                <li class="header-menu__item"><a  href="#contact" class="menu-link">Contact us</a></li>
                                 <li class="header-menu__item">
                                     <a  href="#">
                                         <!-- <svg><use xlink:href="font awesome/svgs/solid/search.svg"></use></svg> -->
@@ -111,8 +111,8 @@
                     <h1 class="header__title">Web development project</h1>
                     <p class="header__text">Very suitable to support all web development projects</p>
                     <div class="btn">
-                        <button class="button button_empty">OUR SERVICES</button>
-                        <button class="button button_full">HIRE IS NOW</button>
+                        <button class="button button-header">OUR SERVICES</button>
+                        <button class="button button-header">HIRE IS NOW</button>
                     </div>
                     <div class="arrow">
                         <a href="#content" class="arrow-link"></a>
@@ -158,23 +158,109 @@
                         <p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                     </div>            
                 </div>
-                <div class="row col-xl-4">
-                    <div class="services-card">
-                        <i class="fas fa-3x fa-search"></i>
-                    <!--<img class="icon__item" src="font awesome/svgs/solid/mobile-alt.svg" alt="mobile"> inline вариант-->
-                        <h4 class="services-card__title">
-                            Research
-                        </h4>
-                        <p class="services_card__text">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
-                        </p>
-                        <button class="services-card__btn">read more</button>
+                <div class="row services-card__block justify-content-center">
+                    <div class="col-xl-4 col-md-6 services-cards">
+                        <div class="card-area">
+                            <i class="fas fa-3x fa-search"></i>
+                            <!--<img class="icon__item" src="font awesome/svgs/solid/mobile-alt.svg" alt="mobile"> inline вариант-->
+                            <h4 class="services-card__title">
+                                Research
+                            </h4>
+                            <p class="services-card__text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                            </p>
+                            <button class="services-card__btn">read more</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 services-cards">
+                        <div class="card-area">
+                            <i class="fas fa-3x fa-images"></i>
+                            <!--<img class="icon__item" src="font awesome/svgs/solid/mobile-alt.svg" alt="mobile"> inline вариант-->
+                            <h4 class="services-card__title">
+                                portfolio
+                            </h4>
+                            <p class="services-card__text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                            </p>
+                            <button class="services-card__btn">read more</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 services-cards">
+                        <div class="card-area">
+                            <i class="far fa-question-circle fa-3x"></i>
+                            <!--<img class="icon__item" src="font awesome/svgs/solid/mobile-alt.svg" alt="mobile"> inline вариант-->
+                            <h4 class="services-card__title">
+                                support
+                            </h4>
+                            <p class="services-card__text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                            </p>
+                            <button class="services-card__btn">read more</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 services-cards">
+                        <div class="card-area">
+                            <i class="fas fa-file-word fa-3x"></i>
+                            <!--<img class="icon__item" src="font awesome/svgs/solid/mobile-alt.svg" alt="mobile"> inline вариант-->
+                            <h4 class="services-card__title">
+                                documantation
+                            </h4>
+                            <p class="services-card__text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                            </p>
+                            <button class="services-card__btn">read more</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 services-cards">
+                        <div class="card-area">
+                            <i class="fas fa-3x fa-code"></i>
+                            <!--<img class="icon__item" src="font awesome/svgs/solid/mobile-alt.svg" alt="mobile"> inline вариант-->
+                            <h4 class="services-card__title">
+                                development
+                            </h4>
+                            <p class="services-card__text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                            </p>
+                            <button class="services-card__btn">read more</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card-area">
+                            <i class="fas fa-paint-brush fa-3x"></i>
+                            <!--<img class="icon__item" src="font awesome/svgs/solid/mobile-alt.svg" alt="mobile"> inline вариант-->
+                            <h4 class="services-card__title">
+                                design
+                            </h4>
+                            <p class="services-card__text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum iti atque corrupti quos.
+                            </p>
+                            <button class="services-card__btn">read more</button>
+                        </div>
                     </div>
                 </div>
-                <div class="row col-xl-4"></div>
-                <div class="row col-xl-4"></div>
-             </div>
+            </div>
         </div>
+    </section>
+
+    <section class="works">
+        <container>
+            <div class="row justify-content-center">
+                <div class="col-xl-8 works-cont">
+                    <h3 class="block-title">latest works</h3>
+                    <p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                    <button val="on" class="button works-btn" filter="all">all</button>
+                    <button val="off" class="button works-btn" filter="wd">web design</button>
+                    <button val="off" class="button works-btn" filter="ux">ui/ux design</button>
+                    <button val="off" class="button works-btn" filter="moc">mockups</button>
+                </div>    
+            </div>
+            <div class="row">
+
+            </div>
+            <div class="row">
+
+            </div>
+        </container>
     </section>
 
     <script src="js/jquery-3.4.1.js"></script>
