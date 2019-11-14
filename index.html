@@ -243,24 +243,43 @@
     </section>
 
     <section class="works">
-        <container>
+        <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8 works-cont">
                     <h3 class="block-title">latest works</h3>
                     <p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                     <button val="on" class="button works-btn" filter="all">all</button>
                     <button val="off" class="button works-btn" filter="wd">web design</button>
-                    <button val="off" class="button works-btn" filter="ux">ui/ux design</button>
+                    <button val="off" class="button works-btn" filter="ud">ui/ux design</button>
                     <button val="off" class="button works-btn" filter="moc">mockups</button>
                 </div>    
             </div>
-            <div class="row">
-
+            <div class="row filter">
+                <div  filter="wd" class="col-xl-4 col-md-6">
+                    <img src="img/pic1.png" alt="1">
+                </div>
+                <div  filter="moc" class="col-xl-4 col-md-6">
+                    <img src="img/pic2.png" alt="2">
+                </div>
+                <div  filter="wd" class="col-xl-4 col-md-6">
+                    <img src="img/pic3.png" alt="3">
+                </div>
+                <div filter="moc" class="col-xl-4 col-md-6">
+                    <img src="img/pic4.png" alt="4">
+                </div>
+                <div filter="ud" class="col-xl-4 col-md-6">
+                    <img src="img/pic5.png" alt="5">
+                </div>
+                <div filter="ud" class="col-xl-4 col-md-6">
+                    <img src="img/pic6.png" alt="6">
+                </div>
             </div>
-            <div class="row">
-
+            <div class="row justify-content-center">
+                <div class="col-xl-12">
+                    <button class="button button-works">View all</button>
+                </div>
             </div>
-        </container>
+        </div>
     </section>
 
     <script src="js/jquery-3.4.1.js"></script>
@@ -269,6 +288,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/popper1.14.7.min.js"></script>
     <script src="js/tooltip.js"></script>
+    <script src="js/main.js"></script>
 
 
 <!--lettering-->
@@ -278,5 +298,11 @@
               $(" ").lettering('words');
             });
     </script>
+
+<!--work modal slider-->
+    <script>
+
+    </script>
+
 </body>
 </html>
