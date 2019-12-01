@@ -35,6 +35,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/lettering.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+
     <!-- Pixel Glass -->
     <style>
         HTML {
@@ -66,15 +70,15 @@
     <script src="https://kit.fontawesome.com/d0beec8f33.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- header -->
+    <!-------------header---------------->
     <header>   
         <!-- header nav -->  
         <nav>
             <div class=" container-fluid">
                 <div class="container">
                     <div class="row flex-wrap-no-wrap">
-                        <div class="col-xl-2 align-self-center">
-                                <a href="#" class="logo animated rollIn align-self-center">your logo</a>
+                        <div class="col-xl-2 align-self-center animated rollIn">
+                            <a href="#" class="logo align-self-center">your logo</a>
                         </div>
     
                         <div class="col-xl-8 ml-auto align-self-center">
@@ -121,12 +125,13 @@
             </div>
         </div>
     </header>
+    <!---------------about--------------->
     <section class="about" id="about">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-8 about-cont">
-                    <h3 class="block-title">About Us</h3>
-                    <p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <div class="col-xl-8 section-header">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                 </div>
             </div>
             <div id="content" class="row about-icons justify-content-around">
@@ -143,19 +148,19 @@
                 <div class="col-xl-3 about-icons__cont">
                     <img src="img/head_icon.png" alt="head" class="about-icons__image">
                     <h4>Fully Responsive</h4>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
                 </div>
             </div>
         </div>
     </section>
-
+    <!---------------services------------->
     <section class="services" id="services">
         <div class="container-fluid">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-8 services-cont">
-                        <h3 class="block-title">Our Services</h3>
-                        <p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                    <div class="col-xl-8 section-header">
+                        <h3>Our Services</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                     </div>            
                 </div>
                 <div class="row services-card__block justify-content-center">
@@ -241,13 +246,15 @@
             </div>
         </div>
     </section>
-
+    <!---------------works---------------->
     <section class="works">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-8 works-cont">
-                    <h3 class="block-title">latest works</h3>
-                    <p class="block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                <div class="col-xl-8 section-header">
+                    <h3>latest works</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                </div>
+                <div class="col-xl-8">
                     <button val="on" class="button works-btn" filter="all">all</button>
                     <button val="off" class="button works-btn" filter="wd">web design</button>
                     <button val="off" class="button works-btn" filter="ud">ui/ux design</button>
@@ -256,30 +263,483 @@
             </div>
             <div class="row filter">
                 <div  filter="wd" class="col-xl-4 col-md-6">
-                    <img src="img/pic1.png" alt="1">
+                    <img src="img/pic4.png" alt="1">
+                    <div class="text">
+                        <h5>Hand Watch</h5>
+                        <p>Web design</p>
+                     </div>
                 </div>
                 <div  filter="moc" class="col-xl-4 col-md-6">
-                    <img src="img/pic2.png" alt="2">
+                    <img src="img/pic5.png" alt="2">
+                    <div class="text">
+                        <h5>One Day Pass</h5>
+                        <p>Mockups</p>
+                     </div>
                 </div>
                 <div  filter="wd" class="col-xl-4 col-md-6">
-                    <img src="img/pic3.png" alt="3">
+                    <img src="img/pic6.png" alt="3">
+                    <div class="text">
+                        <h5>Modal T-shirt</h5>
+                        <p>Web design</p>
+                     </div>
                 </div>
                 <div filter="moc" class="col-xl-4 col-md-6">
-                    <img src="img/pic4.png" alt="4">
+                    <img src="img/pic3.png" alt="4">
+                    <div class="text">
+                        <h5>Flask</h5>
+                        <p>Mockups</p>
+                     </div>
                 </div>
                 <div filter="ud" class="col-xl-4 col-md-6">
-                    <img src="img/pic5.png" alt="5">
+                    <img src="img/pic2.png" alt="5">
+                    <div class="text">
+                        <h5>Eplemost</h5>
+                        <p>Ui/Ux Design</p>
+                     </div>
                 </div>
                 <div filter="ud" class="col-xl-4 col-md-6">
-                    <img src="img/pic6.png" alt="6">
+                    <img src="img/pic1.png" alt="6">
+                    <div class="text">
+                        <h5>The kitchens</h5>
+                        <p>Ui/Ux Design</p>
+                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-xl-12">
-                    <button class="button button-works">View all</button>
+                    <button val="on" class="button works-btn" filter="all">View all</button>
                 </div>
             </div>
         </div>
+    </section>
+    <!--------------price------------------>
+    <section class="price">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 section-header">
+                    <h3>Pricing Plan</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                </div>            
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-4 justify-content-center">
+                    <div class="price-card">
+                        <div class="price__head">
+                            <h5>free trial</h5>
+                            <sup>$</sup>00<sub>per month</sub>
+                        </div>
+                        <div class="price__body">
+                            <ul>
+                                <li>30 Free Trail</li>
+                                <li>5 Free Projects</li>
+                                <li>PHP 5 Enabled</li>
+                                <li>24/7 Suports</li>
+                            </ul>
+                        </div>
+                        <div class="price__footer">
+                            <button>order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 justify-content-center">
+                    <div class="price-card">
+                        <div class="price__head">
+                            <h5>basic</h5>
+                            <sup>$</sup>50<sub>per month</sub>
+                        </div>
+                        <div class="price__body">
+                            <ul>
+                                <li>30 Free Trail</li>
+                                <li>5 Free Projects</li>
+                                <li>PHP 5 Enabled</li>
+                                <li>24/7 Suports</li>
+                            </ul>
+                        </div>
+                        <div class="price__footer">
+                            <button>order now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 justify-content-center">
+                    <div class="price-card">
+                        <div class="price__head">
+                            <h5>ultimates</h5>
+                            <sup>$</sup>99<sub>per month</sub>
+                        </div>
+                        <div class="price__body">
+                            <ul>
+                                <li>30 Free Trail</li>
+                                <li>5 Free Projects</li>
+                                <li>PHP 5 Enabled</li>
+                                <li>24/7 Suports</li>
+                            </ul>
+                        </div>
+                        <div class="price__footer">
+                            <button>order now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------team------------------>
+    <section class="team">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 section-header">
+                    <h3>our team member</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                </div>
+            </div>
+            <div class="row multiple-items justify-content-center">
+                <div class="col-xl-12 team-card">
+                    <img src="img/foto11.png" alt="1">
+                    <h4>John Doe</h4>
+                    <p>General Manager</p>
+                    <div class="team-card__icons">
+                        <a aria-label="Facebook" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="twitter" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="wechat" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="basket" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fas fa-basketball-ball fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-12 team-card">
+                    <img src="img/foto22.png" alt="1">
+                    <h4 class="col-xl-12">Alexa Biru</h4>
+                    <p class="col-xl-12">Office Director</p>
+                    <div class="team-card__icons col-xl-12">
+                        <a aria-label="Facebook" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="twitter" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="wechat" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="basket" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fas fa-basketball-ball fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-12 team-card">
+                    <img src="img/foto33.png" alt="1">
+                    <h4>Ronobir sing</h4>
+                    <p>Admin</p>
+                    <div class="team-card__icons">
+                        <a aria-label="Facebook" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="twitter" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="wechat" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="basket" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fas fa-basketball-ball fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-12 team-card">
+                        <img src="img/foto11.png" alt="1">
+                        <h4>John Doe</h4>
+                        <p>General Manager</p>
+                        <div class="team-card__icons">
+                            <a aria-label="Facebook" href="#">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+    
+                            <a aria-label="twitter" href="#">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+    
+                            <a aria-label="wechat" href="#">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+    
+                            <a aria-label="basket" href="#">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fas fa-basketball-ball fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+    
+                <div class="col-xl-12 team-card">
+                    <img src="img/foto22.png" alt="1">
+                    <h4 class="col-xl-12">Alexa Biru</h4>
+                    <p class="col-xl-12">Office Director</p>
+                    <div class="team-card__icons col-xl-12">
+                        <a aria-label="Facebook" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="twitter" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="wechat" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="basket" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fas fa-basketball-ball fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-12 team-card">
+                    <img src="img/foto33.png" alt="1">
+                    <h4>Ronobir sing</h4>
+                    <p>Admin</p>
+                    <div class="team-card__icons">
+                        <a aria-label="Facebook" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="twitter" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="wechat" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="basket" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fas fa-basketball-ball fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-12 team-card">
+                        <img src="img/foto11.png" alt="1">
+                        <h4>John Doe</h4>
+                        <p>General Manager</p>
+                        <div class="team-card__icons">
+                            <a aria-label="Facebook" href="#">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+    
+                            <a aria-label="twitter" href="#">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+    
+                            <a aria-label="wechat" href="#">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+    
+                            <a aria-label="basket" href="#">
+                                <span class="fa-stack fa-2x">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fas fa-basketball-ball fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+    
+                <div class="col-xl-12 team-card">
+                    <img src="img/foto22.png" alt="1">
+                    <h4 class="col-xl-12">Alexa Biru</h4>
+                    <p class="col-xl-12">Office Director</p>
+                    <div class="team-card__icons col-xl-12">
+                        <a aria-label="Facebook" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="twitter" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="wechat" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="basket" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fas fa-basketball-ball fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-xl-12 team-card">
+                    <img src="img/foto33.png" alt="1">
+                    <h4>Ronobir sing</h4>
+                    <p>Admin</p>
+                    <div class="team-card__icons">
+                        <a aria-label="Facebook" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="twitter" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="wechat" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+
+                        <a aria-label="basket" href="#">
+                            <span class="fa-stack fa-2x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fas fa-basketball-ball fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <!---------------blog------------------>
+    <section class="blog">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 section-header">
+                    <h3>blog</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </p>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-xl-6">
+                    <img src="img/SEO.png" alt="seo">
+                </div>
+                <div class="col-xl-6 blog-text">
+                    <h4><a href="#">SEO Quis Vestibulum</a></h4>
+                    <div class="event">
+                        <span>
+                            <i class="far fa-calendar-alt"></i>14.07.2017
+                        </span>
+                        <span>
+                            <i class="far fa-file"></i>development
+                        </span>
+                    </div>
+                    <p>olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                         nisi ut aliquip ex ea commodo consequat...
+                    </p>
+                </div>
+            </div>
+        </div>       
     </section>
 
     <script src="js/jquery-3.4.1.js"></script>
@@ -288,21 +748,41 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/popper1.14.7.min.js"></script>
     <script src="js/tooltip.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
-
-
-<!--lettering-->
+    
     <script>
         $(document).ready(function() {
-              $(".logo").lettering('words').children("span").lettering();
-              $(" ").lettering('words');
-            });
+        /*--lettering--*/
+            $(".logo").lettering('words').children("span").css({'display':'inline-block', '-webkit-transform':'rotate(-25deg)'}).lettering();
+            $(" ").lettering('words');
+        });
     </script>
 
-<!--work modal slider-->
     <script>
-
+        $(document).ready(function() {
+            $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                arrows: false,
+                dots: true,
+                dotsClass: 'dots-style',
+                responsive: [{
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                }]
+            });
+    });
     </script>
-
 </body>
 </html>

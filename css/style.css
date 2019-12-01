@@ -190,11 +190,31 @@ header .container-fluid {
   padding: 125px 0px;
 }
 
-
-.about-cont p {
-  margin: 37px 0 128px 0;
+.section-header h3 {
+  font-size: 30px;
+  font-family: "Open Sans bold";
+  text-transform: capitalize;
+  color: rgb(33, 33, 33);
+  font-weight: 600;
+  line-height: 0.733;
+  text-align: center; 
+  letter-spacing: 0.05em; 
+  margin-bottom: 35px;
 }
 
+.section-header p {
+  font-size: 15px;
+  font-family: "Open Sans regular";
+  color: rgb(33, 33, 33);
+  line-height: 1.467;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 0;
+}
+
+.about-icons {
+  margin-top: 128px;
+}
 
 .about-icons__cont {
   flex-direction: column;
@@ -209,13 +229,15 @@ header .container-fluid {
 
 .about-icons__cont h4 {
   font-size: 20px;
-  font-family: "Open Sans";
+  font-family: "Open Sans semibold";
   color: rgb(33, 33, 33);
   line-height: 1.1;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
 }
 
 .about-icons__cont p {
+  font-family: "Open Sans regular";
+  font-size: 15px;
   color: rgb(33, 33, 33);
   line-height: 1.467;
   letter-spacing: 0.05em;
@@ -226,7 +248,7 @@ header .container-fluid {
 
 /*---------section services--------------*/
 .services {
-  padding: 174px 0px 126px 0px;
+  padding: 174px 0 120px 0;
   background-color: #e4fdf9;
 }
 
@@ -238,34 +260,8 @@ header .container-fluid {
   flex-wrap: wrap;
   margin-left: 0;
   margin-right: 0;
+  margin-top: 117px;
   padding: 0;
-}
-
-/* .card-area {
-  margin: 0 auto;
-} */
-
-.block-title {
-    font-size: 30px;
-    font-family: "Open Sans";
-    color: rgb(33, 33, 33);
-    font-weight: bold;
-    line-height: 0.733;
-    text-align: center; 
-    letter-spacing: 1.5px; 
-}
-
-.block-text {
-    font-size: 15px;
-    font-family: "Open Sans";
-    color: rgb(33, 33, 33);
-    line-height: 1.467;
-    text-align: center;
-    letter-spacing: 0.75px;
-}
-
-.services .block-text { 
-  padding: 37px 0 110px 0;
 }
 
 .card-area {
@@ -309,7 +305,7 @@ header .container-fluid {
 
 .services-card__text {
   font-size: 15px;
-  font-family: "Open Sans";
+  font-family: "Open Sans regular";
   color: rgb(33, 33, 33);
   line-height: 1.667;
   letter-spacing: 0.75px;
@@ -330,20 +326,17 @@ header .container-fluid {
   margin: 0 auto;
   background: transparent;
 }
-/*---services END----*/
+/*---section services END----*/
 
-/*-----works---------*/
+/*-----section works---------*/
 .works {
   text-align: center;
+  padding: 125px 0 135px 0;
 }
 
-.works h3 {
-  margin: 125px 0 40px 0;
+.works .section-header {
+  margin-bottom: 116px;
   text-transform: capitalize;
-}
-
-.works p {
-  margin-bottom: 115px;
 }
 
 .works button {
@@ -354,7 +347,8 @@ header .container-fluid {
   border: 2px solid rgb(0, 137, 123);
 }
 
-.works button:hover {
+.works-btn:hover,
+.focused {
   background:  rgb(0, 137, 123);
   color: white;
   border: 2px solid rgb(0, 137, 123);
@@ -377,3 +371,232 @@ header .container-fluid {
   text-transform: uppercase;
 }
 
+div[filter]:hover img {
+  filter: brightness(50%);
+  transition: 0,8s;
+}
+
+.text{
+  display: none;
+} 
+
+div[filter]:hover .text{
+  display: block;
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: 3;
+  text-align: center;
+  transition: 0.8s;
+}
+/*---------section works END-------*/
+
+/*---------section price-----------*/
+.price {
+  padding: 126px 0;
+  background: #f0f1f1;
+}
+
+.price .section-header {
+  margin-bottom: 130px;
+}
+
+.price-card{
+  background: #fff;
+  text-align: center;
+}
+
+.price-card:hover {
+  box-shadow:  0px 0px 11px 3px rgba(0, 0, 0, 0.39);
+}
+
+.price__head{
+  background-image: url('../img/header_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 40px 0 65px 0;
+  max-height: 210px;
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 0.05em;
+}
+
+.price__head sup{
+  font-size: 25px;
+  top: -16px;
+
+}
+
+.price__head sub{
+  font-size: 17px;
+  bottom: 0;
+}
+
+.price__head h5 {
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.price__body ul li{
+  font-size: 17px;
+  line-height: 17px;
+  font-family: "Open Sans light";
+  color: rgb(33, 33, 33);
+  border-bottom: 1px solid #bfbfbf;
+  max-width: 170px;
+  margin: 0 auto;
+  padding: 36px 0 18px 0;
+}
+
+.price__footer{
+  padding: 60px 0;
+}
+
+.price__footer button {
+    font-size: 20px;
+    font-family: "Open Sans semibold";
+    color: rgb(33, 33, 33);
+    line-height: 1;
+    text-transform: capitalize;
+    background: transparent;
+    border: 2px solid #000;
+    letter-spacing: 0.05em;
+    width: 180px;
+    height: 60px;
+}
+
+.price__footer button:hover {
+  color: white;
+  text-transform: uppercase;
+  background: rgb(0, 137, 123);
+  border:  rgb(0, 137, 123);
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+/*---------section price END-------*/
+
+/*---------section team------------*/
+.team {
+  padding: 125px 0;
+}
+
+.team .section-header {
+  margin-bottom: 130px;
+}
+
+.team-card {
+  justify-content: center;
+  text-align: center;
+}
+
+.team-card img {
+  max-width: 340px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.team-card h4 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family: "Open Sans semibold";
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  margin-top: 40px;
+  margin-bottom: 17px;
+}
+
+.team-card p {
+  font-size: 15px;
+  font-family: "Open Sans regular";
+  line-height: 1.467;
+  letter-spacing: 0.05em;
+  margin-bottom: 33px;
+}
+
+.team-card__icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.team-card__icons a{
+  text-align: center;
+}
+
+.team-card__icons a i {
+  transition: 0.5s;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.team-card__icons i:nth-child(1) {
+  color: #f0f1f1;
+}
+
+.team-card__icons i:nth-child(2) {
+  color: #00897b;
+}
+
+.team-card__icons a:hover i:nth-child(1) {
+  color: #3949ab;;
+}
+
+.team-card__icons a:hover i:nth-child(2) {
+  color: #fff;
+}
+
+.dots-style {
+  margin-top: 85px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.dots-style button {
+  background: #00897b;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+}
+
+.dots-style li[class="slick-active"] button {
+  background: #3949ab;
+}
+/*---------section team END-------*/
+
+/*---------section blog-----------*/
+.blog {
+  padding: 125px 0;
+  background-color: #e4fdf9;
+}
+
+.blog .section-header {
+  margin-bottom: 125px;
+}
+
+.blog-text h4 a {
+  font-size: 25px;
+  font-family: "Open Sans semibold";
+  color: rgb(0, 137, 123);
+  line-height: 0.88;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.event {
+    font-size: 17px;
+    font-family: "Open Sans semibold";
+    color: rgb(33, 33, 33);
+    line-height: 1.294;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+}
