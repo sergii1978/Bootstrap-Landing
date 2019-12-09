@@ -15,6 +15,10 @@ ul,li{
   padding: 0;
 }
 
+*a {
+  text-decoration: none;
+}
+
 a:hover{
   cursor: pointer;
 }
@@ -136,6 +140,7 @@ header .container-fluid {
   background: transparent;
   border: 3px solid white;
 }
+
 
 .header-main button {
   width: 220px;
@@ -542,7 +547,7 @@ div[filter]:hover .text{
 }
 
 .team-card__icons a:hover i:nth-child(1) {
-  color: #3949ab;;
+  color: #3949ab;
 }
 
 .team-card__icons a:hover i:nth-child(2) {
@@ -581,7 +586,22 @@ div[filter]:hover .text{
   margin-bottom: 125px;
 }
 
-.blog-text h4 a {
+.blog-text {
+  text-align: left;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.blog-text i{
+  margin-right: 15px;
+}
+
+.blog-text div {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.blog-text a {
   font-size: 25px;
   font-family: "Open Sans semibold";
   color: rgb(0, 137, 123);
@@ -591,7 +611,7 @@ div[filter]:hover .text{
   text-decoration: none;
 }
 
-.event {
+.blog-text span {
     font-size: 17px;
     font-family: "Open Sans semibold";
     color: rgb(33, 33, 33);
@@ -599,4 +619,27 @@ div[filter]:hover .text{
     text-align: left;
     text-transform: capitalize;
     letter-spacing: 0.05em;
+    margin-right: 34px;
 }
+
+.left > div:first-child {
+  order: 1;
+}
+
+.left > div:last-child {
+  order: 2;
+}
+
+.right > div:first-child {
+  order: 2;
+}
+
+.right > div:last-child {
+  order: 1;
+}
+
+.blog-item {
+  width: 48%;
+}
+
+
