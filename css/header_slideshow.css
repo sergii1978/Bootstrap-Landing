@@ -11,10 +11,7 @@
   content: '';
   background: transparent url(../img/header_slideshow/pattern.png) repeat top left;
 }
-/* .header_slideshow:after {
-    content: '';
-    background: transparent url(../img/header_slideshow/pattern.png) repeat top left;
-} */
+
 .header_slideshow li {
   animation: imageAnimation 30s linear infinite 0s;
   backface-visibility: hidden;

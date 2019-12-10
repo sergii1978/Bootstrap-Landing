@@ -642,4 +642,49 @@ div[filter]:hover .text{
   width: 48%;
 }
 
+.button-blog {
+  width: 220px;
+  height: 70px;
+  border: 2px solid rgb(0, 137, 123);
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 137, 123);
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 125px;
+}
 
+.button-blog:hover {
+  border: 2px solid rgb(0, 137, 123);
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+
+/*------section blog END------*/
+
+/*-------section call us------*/
+.call {
+  padding-bottom: 110px;
+  padding-top: 125px;
+  background-image: url('../img/contact_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.call .section-header {
+  z-index: 125;
+}
+
+.call .section-header h3{
+  color: #fff;
+}
+
+.call .section-header p{
+  color: #fff;
+}
