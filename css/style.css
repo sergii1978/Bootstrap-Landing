@@ -215,7 +215,7 @@ header .container-fluid {
   margin-bottom: 80px;
 }
 
-.arrow {
+.arrow-link {
   display: block;
   margin: 0 auto;
   width: 25px;
@@ -228,7 +228,8 @@ header .container-fluid {
   align-self: center;
   text-decoration: none;
 	cursor:pointer;
-	animation: animateArrow 1s infinite;
+  animation: animateArrow 1s infinite;
+  z-index: 125;
 }
 
 @keyframes animateArrow {
@@ -844,7 +845,7 @@ input::placeholder {
 }
 
 
-/*-----Responsive---*/
+/*--------Responsive------*/
 /* 992px - 1200px */
 @media screen and (max-width: 1200px) {
 
@@ -862,5 +863,33 @@ input::placeholder {
 
 /* 320px - 576px */
 @media screen and (max-width: 576px) {
+  .team-card img {
+    max-width: 100%;
+  }
+}
 
+/* 0 - 320px */
+@media screen and (max-width: 320px) {
+  .team-card img {
+    max-width: 100%;
+  }
+
+  .team-card__icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .dots-style {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .dots-style button {
+    margin: 0 auto;
+  }
 }

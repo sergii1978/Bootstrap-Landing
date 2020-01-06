@@ -40,7 +40,7 @@ $(document).ready(function() {
                 slidesToScroll: 2,
             }
         }, {
-            breakpoint: 320,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
