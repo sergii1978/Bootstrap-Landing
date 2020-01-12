@@ -29,7 +29,7 @@
 <!---header слайдшоу----->
     <link rel="stylesheet" href="css/header_slideshow.css">
 
-    <link rel="stylesheet" href="pixel_glass/pixel_glass.css">
+    <!-- <link rel="stylesheet" href="pixel_glass/pixel_glass.css"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -38,8 +38,8 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
 
-
-    <!-- Pixel Glass -->
+<!-- 
+    Pixel Glass
     <style>
         HTML {
             background-repeat: no-repeat;
@@ -65,26 +65,35 @@
         BODY {
             opacity: .5;
         }
-    </style>
-        <!--font awesome web-->
-    <script src="https://kit.fontawesome.com/d0beec8f33.js" crossorigin="anonymous"></script>
+    </style> -->
+
+    <!--font awesome web-->
+    <!-- <script src="https://kit.fontawesome.com/d0beec8f33.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
     <div id="toTop"><i class="fas fa-chevron-up"></i></div>
     <!-------------header---------------->
-    <header>   
+    <header class="menu-bar">   
         <!-- header nav -->  
-        <nav>
-            <div class=" container-fluid">
-                <div class="container">
-                    <div class="row flex-wrap-no-wrap">
-                        <div class="col-xl-2 align-self-center animated rollIn">
-                            <a href="#" class="logo align-self-center" title="logo">your logo</a>
-                        </div>
-    
-                        <div class="col-xl-8 ml-auto align-self-center">
-                            <ul class="header-menu d-flex justify-content-end">
-                                <li class="header-menu__item"><a  href="#" class="menu-link">Home</a></li>
+        <div class=" container-fluid">
+            <div class="container">
+                <div class="row nav-cont">
+                    <div class="col-xl-2 animated rollIn logo-bar">
+                        <a href="#" class="logo" title="logo">your logo</a>
+                        <button class="menu-icon"><i class="fas fa-bars"></i></button>
+                    </div>
+
+                    <div class="col-xl-8 ml-auto align-self-center nav-hide">
+                        <nav>
+                            <ul class="header-menu justify-content-end">
+                                <li class="header-menu__item">
+                                    <a  href="#">
+                                        <span class="fa-stack fa-1x">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-home fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                </li>
                                 <li class="header-menu__item"><a  href="#about" class="menu-link">About</a></li>
                                 <li class="header-menu__item"><a  href="#services" class="menu-link">Servicing</a></li>
                                 <li class="header-menu__item"><a  href="#portfolio" class="menu-link">Portfolio</a></li>
@@ -92,16 +101,19 @@
                                 <li class="header-menu__item"><a  href="#contact" class="menu-link">Contact us</a></li>
                                 <li class="header-menu__item">
                                     <a  href="#">
+                                        <span class="fa-stack fa-1x">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fas fa-search  fa-stack-1x fa-inverse"></i>"></i>
+                                        </span>
                                         <!-- <svg><use xlink:href="font awesome/svgs/solid/search.svg"></use></svg> -->
-                                        <i class="fas fa-search"></i>
                                     </a>
                                 </li>
                             </ul>
-                        </div>   
-                    </div>
+                        </nav>
+                    </div>   
                 </div>
             </div>
-        </nav>   
+        </div> 
 
         <ul class="header_slideshow">
             <li></li>
@@ -109,8 +121,11 @@
             <li></li>
             <li></li>
         </ul>
+    </header>
+
+    <header class="header" id="header">
     <!--header main-->
-        <div class="container header-main" id="header-main">
+        <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-12 flex-direction-column">
                     <h1 class="header__title">Web development project</h1>
@@ -134,17 +149,17 @@
                 </div>
             </div>
             <div id="content" class="row about-icons justify-content-around">
-                <div class="col-xl-3 about-icons__cont animated">
+                <div class="col-xl-3 col-md-6 about-icons__cont animated">
                     <img src="img/globus_icon.png" alt="globus" class="about-icons__image">
                     <h4>Awesome Icons</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
                 </div>
-                <div class="col-xl-3 about-icons__cont animated">
+                <div class="col-xl-3 col-md-6 about-icons__cont animated">
                     <img src="img/people_icon.png" alt="people" class="about-icons__image">
                     <h4>One Page</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
                 </div>
-                <div class="col-xl-3 about-icons__cont animated">
+                <div class="col-xl-3 col-md-6 about-icons__cont animated">
                     <img src="img/head_icon.png" alt="head" class="about-icons__image">
                     <h4>Fully Responsive</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
@@ -253,7 +268,7 @@
                     <h3>latest works</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
                 </div>
-                <div class="col-xl-8">
+                <div class="col-xl-8 col-md-8">
                     <button val="on" class="button works-btn" filter="all">all</button>
                     <button val="off" class="button works-btn" filter="wd">web design</button>
                     <button val="off" class="button works-btn" filter="ud">ui/ux design</button>
@@ -321,7 +336,7 @@
                 </div>            
             </div>
             <div class="row justify-content-center">
-                <div class="col-xl-4 justify-content-center">
+                <div class="col-xl-4  col-md-6 justify-content-center">
                     <div class="price-card">
                         <div class="price__head">
                             <h5>free trial</h5>
@@ -340,7 +355,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 justify-content-center">
+                <div class="col-xl-4 col-md-6 justify-content-center">
                     <div class="price-card">
                         <div class="price__head">
                             <h5>basic</h5>
@@ -359,7 +374,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 justify-content-center">
+                <div class="col-xl-4 col-md-6 justify-content-center">
                     <div class="price-card">
                         <div class="price__head">
                             <h5>ultimates</h5>
@@ -832,16 +847,16 @@
     </section>   
 
     <footer class="rules">
-        <p> All rights Reserved © 2017</p>
+        <p> All rights Reserved © 2020</p>
     </footer>
     <script src="js/jQuery3.4.1.slim.min.js"></script>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/jquery.lettering.js"></script>
-    <script src="pixel_glass/pixel_glass.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/popper1.14.7.min.js"></script>
     <script src="js/tooltip.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
+    <!-- <script src="pixel_glass/pixel_glass.js"></script> -->
 </body>
 </html>
