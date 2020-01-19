@@ -37,6 +37,8 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style_sliding.css">
+    <link rel="stylesheet" href="css/style_typography.css">
 
 <!-- 
     Pixel Glass
@@ -78,12 +80,12 @@
         <div class=" container-fluid">
             <div class="container">
                 <div class="row nav-cont">
-                    <div class="col-xl-2 animated rollIn logo-bar">
+                    <div class="col-xl-3 animated rollIn logo-bar">
                         <a href="#" class="logo" title="logo">your logo</a>
                         <button class="menu-icon"><i class="fas fa-bars"></i></button>
                     </div>
 
-                    <div class="col-xl-8 ml-auto align-self-center nav-hide">
+                    <div class="col-xl-9 ml-auto align-self-center nav-hide">
                         <nav>
                             <ul class="header-menu justify-content-end">
                                 <li class="header-menu__item">
@@ -128,8 +130,17 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-12 flex-direction-column">
-                    <h1 class="header__title">Web development project</h1>
+                    <!-- <h1 class="header__title">Web development project</h1>
+                    <p class="header__text">Very suitable to support all web development projects</p> -->
+
+                    <h1 class="cs-text">
+                        <span class="cs-text-cut">Web</span>
+                        <span class="cs-text-mid">Development</span>
+                        <span class="cs-text-cut">Web</span>
+                    </h1>
+
                     <p class="header__text">Very suitable to support all web development projects</p>
+                    
                     <div class="btn">
                         <button class="button button-header">OUR SERVICES</button>
                         <button class="button button-header">HIRE IS NOW</button>
@@ -818,19 +829,19 @@
                 </div>
             </div>
             <div class="row justify-content-around">
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-6">
                     <div class="call-item">
                         <i class="fas fa-map-marker-alt" title="map"></i>
                     </div>
                     <p>Nobinagar savar,Dhaka<br>Bangladesh</p>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-6">
                     <div class="call-item">
                         <i class="fas fa-phone fa-rotate-90" title="phone"></i>
                     </div>
                     <p>+8801743331996<br> +8801928737807</p>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-6">
                     <div class="call-item">
                         <i class="fas fa-envelope" title="mail"></i>
                     </div>
@@ -856,7 +867,11 @@
     <script src="js/popper1.14.7.min.js"></script>
     <script src="js/tooltip.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.hoverwords.js"></script>        
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+    <!--[if lte IE 8]><style>.support-note .note-ie{display:block;}</style><![endif]-->
     <!-- <script src="pixel_glass/pixel_glass.js"></script> -->
 </body>
 </html>

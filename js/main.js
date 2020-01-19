@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
     $('.works-btn[filter]').click(function(){
@@ -24,6 +23,11 @@ $(document).ready(function() {
 
     /*--lettering--*/
     $(".logo").lettering();
+    $(".menu-link").lettering();
+    $(".cs-text-cut").lettering('words');
+    $(".cs-text-mid").lettering();
+    $(".section-header h3").lettering(); 
+
 
     /*--slick slider--*/ 
     $('.multiple-items').slick({
