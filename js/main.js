@@ -88,6 +88,10 @@ $(document).ready(function() {
             $('.header_slideshow').css({
                 'top': '250px',
              });
+
+             $('.header_slideshow').css({
+                'top': '250px',
+             });
             if ($('.menu-icon').html() == '<i class="fas fa-bars"></i>') {
                $(this).html('<i class="fas fa-times"></i>');
             } else {

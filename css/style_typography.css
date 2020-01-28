@@ -109,3 +109,30 @@
 	-ms-transform: scale(1);
 	transform: scale(1);
 }
+
+/*--------Responsive------*/
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	
+	}
+  
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.cs-text-mid {
+		font-size: 40px;
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.cs-text-cut span {
+		font-size: 120px;
+	}
+	.cs-text-mid {
+		font-size: 30px;
+		letter-spacing: 25px;
+	}
+
+/* 0 - 320px */
+@media screen and (max-width: 320px) {
+
+}

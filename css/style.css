@@ -847,6 +847,8 @@ input::placeholder {
   margin-bottom: 0;
 }
 
+
+
 /*--------Responsive------*/
 /* 992px - 1200px */
 @media screen and (max-width: 1200px) {
@@ -886,6 +888,14 @@ input::placeholder {
     display: block;
   }
 
+  .header_slideshow li {
+    height: 900px;
+  }
+
+  .works button {
+    margin: 5px 10px;
+  }
+
 /* 768px - 992px */
 @media screen and (max-width: 992px) {
   .team-card img {
@@ -893,6 +903,10 @@ input::placeholder {
   }
   .works button {
     margin: 5px 10px;
+  }
+
+  .works-btn {
+    margin-top: 10px;
   }
 
   .blog-text {
@@ -904,9 +918,9 @@ input::placeholder {
     margin-bottom: 20px;
   }
 
-  .form button (
+  .form button {
     justify-content: center;
-  )
+  }
 }
 
 /* 576px - 768px */
