@@ -1,6 +1,5 @@
 body{
     font-family: 'Open Sans', sans-serif;
-    color: #fff; 
     margin: 0;
     padding: 0;
 }
@@ -100,17 +99,18 @@ button:focus {
   align-self: center;
   align-items: center;
   font-size: 24px;
+  line-height: 24px;
   font-family: "Open Sans";
 }
 
 .logo {
   align-self: center;
-  font-size: 42px;
+  font-size: 40px;
   /* font-family: "Open Sans"; */
   font-family: 'Sancreek', cursive;
   color: rgb(33, 33, 33);
   font-weight: bold;
-  line-height: 0.88;
+  line-height: 40px;
   letter-spacing: 1;
   text-transform: capitalize;
   text-shadow: 7px 2px 0 rgba(255,255,255,0.3);
@@ -131,6 +131,8 @@ button:focus {
   text-align: center;
   font-family: 'Sancreek', cursive;
   font-size: 20px;
+  line-height: 20px;
+  align-self: center;
 }
 
 .header-menu__item .fa-circle {
@@ -146,10 +148,11 @@ button:focus {
   font-family: 'Open Sans semibold';
   /* font-family: 'Sancreek', cursive; */
   font-size: 24px;
-  font-weight: 600;
- color: linear-gradient(to right, #2e256d, #463c79, #5d5484, #736c8f, #89859a, #848290, #807e85, #7b7b7b, #5b5b5b, #3d3d3d, #212121, #000000);
- line-height: 1.1;
+  line-height: 24px;
   letter-spacing: 0.05em;
+  font-weight: 600;
+  color: linear-gradient(to right, #2e256d, #463c79, #5d5484, #736c8f, #89859a, #848290, #807e85, #7b7b7b, #5b5b5b, #3d3d3d, #212121, #000000);
+
   /* letter-spacing: 1px;  */
   /* 20px*50/1000 = 1px  */
   /* 50/1000 em = 0.05em */
@@ -197,14 +200,12 @@ button:focus {
   border: 3px solid white;
 }
 
-
 .header button {
   width: 220px;
   height: 70px;
   padding: 0 auto;
   margin: 0 10px;
 }
-
 
 .button:hover {
   background: rgb(0, 137, 123);
@@ -925,6 +926,20 @@ input::placeholder {
 
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
+  .header__text {
+    font-size: 20px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    letter-spacing: 1;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 80px;
+  }
+
+  .btn {
+    margin-bottom: 30px;
+  }
+
   .team-card img {
     max-width: 340px;
   }
@@ -935,7 +950,18 @@ input::placeholder {
   .team-card img {
     max-width: 100%;
   }
+  .header__text {
+    margin-bottom: 30px;
+  }
+  .header .button {
+    margin-bottom: 10px;
+  }
+  .about,.team,.works,.services,.blog,.price,.portfolio {
+    padding: 50px 0px 50px 0px;
+  }
 }
+
+
 
 /* 0 - 320px */
 @media screen and (max-width: 320px) {

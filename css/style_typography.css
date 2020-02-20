@@ -130,6 +130,25 @@
 	.cs-text-mid {
 		font-size: 30px;
 		letter-spacing: 25px;
+		top:17%;
+	}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.cs-text {
+		width: 320px;
+		margin: 20px auto 20px;
+		cursor: pointer;
+		color: #fff;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	}
+	.cs-text-cut span {
+		font-size: 100px;
+	}
+	.cs-text-mid {
+		font-size: 20px;
+		letter-spacing: 10px;
+		top:17%;
 	}
 
 /* 0 - 320px */
