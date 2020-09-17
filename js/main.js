@@ -34,6 +34,8 @@ $(document).ready(function() {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 4000,
         arrows: false,
         dots: true,
         dotsClass: 'dots-style',
